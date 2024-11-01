@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>Booster - Browse</title>
+</head>
+<body>
+    <div id="main" class="flex flex-col gap-[30px] overflow-hidden min-h-screen mx-auto bg-[#F2F2F2]">
+        <nav id="navbar" class=" bg-white">
+            <ul class="max-w-[1280px] flex justify-between items-center px-[75px] py-5 mx-auto">
+                <a href="index.html" class="w-[149px] h-[46px] shrink-0 overflow-hidden">
+                    <img src="assets/images/logos/logo.svg" class="w-full h-full object-cover" alt="logo">
+                </a>
+                <div class="flex gap-[30px] items-center justify-center">
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Use Case</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">About</a>
+                    </li>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <a href="#" class="p-[10px] rounded-[18px] ring-1 ring-booster-light hover:ring-booster-yellow transition-all duration-300">
+                        <img src="assets/images/icons/24-support.svg" class="w-6 h-6" alt="icon">
+                    </a>
+                    <a href="#" class="p-[10px] rounded-[18px] ring-1 ring-booster-light hover:ring-booster-yellow transition-all duration-300">
+                        <img src="assets/images/icons/setting-2.svg" class="w-6 h-6" alt="icon">
+                    </a>
+                    <img src="assets/images/icons/line.svg" class="h-[52px]" alt="line">
+                    <a href="#" class="py-[14px] px-5 font-semibold bg-booster-blue rounded-[18px] text-white">Check My Order</a>
+                </div>
+            </ul>
+        </nav>
+        <div class="max-w-[1280px] w-full flex gap-[30px] px-[75px] mx-auto pb-[60px]">
+            <main id="Left-Content" class="flex flex-col flex-1 rounded-[44px] border border-booster-light pb-[30px] gap-5 bg-white overflow-hidden">
+                <div class="banner-thumbnails w-full h-[220px] flex shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbnails/banner-thumbnails.png" class="w-full h-full object-cover" alt="banner">
+                </div>
+                <div class="relative flex flex-col pt-[60px] px-[30px] gap-5">
+                    <div class="photo-container absolute left-[30px] -top-20 flex w-[120px] h-[120px] rounded-[40px] overflow-hidden bg-[#D9D9D9]">
+                        <img src="assets/images/photos/profile-1.png" class="w-full h-full object-cover" alt="icon">
+                    </div>
+                    <div id="Title" class="flex items-center justify-between">
+                        <div class="flex flex-col gap-[2px]">
+                            <div class="flex items-center gap-1">
+                                <h1 class="font-bold text-[26px] leading-[39px]">Adriana Saputri</h1>
+                                <img src="assets/images/icons/verify.svg" class="w-[30px] flex shrink-0" alt="icon">
+                            </div>
+                            <p class="text-booster-grey">Nano Influencer</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="flex items-center rounded-2xl ring-1 ring-booster-light py-[14px] px-4 gap-[10px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                                <img src="assets/images/icons/folder-add-black-outline.svg" class="w-6 flex shrink-0" alt="icon">
+                                <span class="font-semibold">Collection</span>
+                            </button>
+                            <div class="separator h-[52px] border border-booster-light"></div>
+                            <a href="#" class="flex items-center rounded-2xl ring-1 ring-booster-light p-[14px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                                <img src="assets/images/icons/message-text-black-outline.svg" class="w-6 flex shrink-0" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="border-dashed border-booster-light">
+                    <div id="Badge" class="relative flex items-center min-h-[70px] rounded-[20px] py-[14px] px-5 gap-[10px] bg-[linear-gradient(87deg,#360CAC_16.85%,#FF4D9F_81.08%)]">
+                        <div class="stars-ornament absolute top-0 w-full h-full flex justify-between pl-12 pr-11">
+                            <img src="assets/images/icons/stars-group-bg.svg" class="h-full" alt="icons">
+                            <img src="assets/images/icons/stars-group-bg.svg" class="h-full" alt="icons">
+                        </div>
+                        <img src="assets/images/icons/crown-white-fill.svg" class="relative w-8 flex shrink-0" alt="">
+                        <span class="relative font-semibold text-lg leading-[27px] text-white">This Influencer is hot trending globally at this moment, hire now!</span>
+                    </div>
+                    <div id="Stats" class="grid grid-cols-4 gap-5">
+                        <div class=" card flex flex-col rounded-[34px] ring-1 ring-booster-light p-5 gap-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                            <img src="assets/images/icons/users-blue-outline.svg" class="w-[38px] flex-shrink-0" alt="icon">
+                            <div>
+                                <p class="font-bold text-lg leading-[27px]">19.250.000</p>
+                                <p class="mt-[2px] text-booster-grey">Total Followers</p>
+                            </div>
+                        </div>
+                        <div class=" card flex flex-col rounded-[34px] ring-1 ring-booster-light p-5 gap-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                            <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-[38px] flex-shrink-0" alt="icon">
+                            <div>
+                                <p class="font-bold text-lg leading-[27px]">189.394</p>
+                                <p class="mt-[2px] text-booster-grey">Success Jobs</p>
+                            </div>
+                        </div>
+                        <div class=" card flex flex-col rounded-[34px] ring-1 ring-booster-light p-5 gap-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                            <img src="assets/images/icons/global-blue-outline.svg" class="w-[38px] flex-shrink-0" alt="icon">
+                            <div>
+                                <p class="font-bold text-lg leading-[27px]">Jakarta</p>
+                                <p class="mt-[2px] text-booster-grey">City</p>
+                            </div>
+                        </div>
+                        <div class=" card flex flex-col rounded-[34px] ring-1 ring-booster-light p-5 gap-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300">
+                            <img src="assets/images/icons/status-up-blue-outline.svg" class="w-[38px] flex-shrink-0" alt="icon">
+                            <div>
+                                <p class="font-bold text-lg leading-[27px]">98%</p>
+                                <p class="mt-[2px] text-booster-grey">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-dashed border-booster-light">
+                    <div id="About" class="flex flex-col gap-[6px]">
+                        <h2 class="font-bold">About Myself</h2>
+                        <p class="leading-8 text-booster-grey">I'm thrilled to share my latest brainstorming session, which has generated ideas that are not only actionable but highly valuable for online businesses aiming to boost visibility and accelerate growth. These ideas are crafted specifically for businesses.</p>
+                    </div>
+                    <hr class="border-dashed border-booster-light">
+                    <div id="Workflow" class="flex flex-col gap-3">
+                        <h2 class="font-bold">Ideal Workflow</h2>
+                        <div class="grid grid-cols-3 gap-[30px]">
+                            <div class="card flex flex-col gap-5">
+                                <img src="assets/images/icons/note-favourite-yellow-bg.svg" class="w-[70px] flex shrink-0" alt="icon">
+                                <div class="flex flex-col gap-[6px]">
+                                    <h3 class="font-bold">Pelajari Brief</h3>
+                                    <p class="text-sm leading-6 text-booster-grey">Memahami dengan baik agar sesuai dari goal perusahaan</p>
+                                </div>
+                            </div>
+                            <div class="card flex flex-col gap-5">
+                                <img src="assets/images/icons/calendar-tick-blue-bg.svg" class="w-[70px] flex shrink-0" alt="icon">
+                                <div class="flex flex-col gap-[6px]">
+                                    <h3 class="font-bold">Post Content</h3>
+                                    <p class="text-sm leading-6 text-booster-grey">Membuat dan memposting konten ke seluruh social media </p>
+                                </div>
+                            </div>
+                            <div class="card flex flex-col gap-5">
+                                <img src="assets/images/icons/note-green-bg.svg" class="w-[70px] flex shrink-0" alt="icon">
+                                <div class="flex flex-col gap-[6px]">
+                                    <h3 class="font-bold">Sending Report</h3>
+                                    <p class="text-sm leading-6 text-booster-grey">Menyiapkan laporan hasil paid content untuk perusahaan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-dashed border-booster-light">
+                    <div id="Testimonials" class="flex flex-col gap-3">
+                        <h2 class="font-bold">Happy Businesses</h2>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="card flex flex-col rounded-[34px] border border-booster-light p-5 gap-4 bg-[#FAFAFB]">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex w-[70px] h-[70px] rounded-3xl overflow-hidden bg-[#D9D9D9] shrink-0">
+                                        <img src="assets/images/photos/profile-6.png" class="w-full h-full object-cover" alt="photo">
+                                    </div>
+                                    <div class="flex flex-col justify-center gap-[2px]">
+                                        <div class="flex items-center gap-[2px] flex-nowrap">
+                                            <h1 class="font-bold line-clamp-1">Adriana Saputri</h1>
+                                            <img src="assets/images/icons/verify.svg" class="w-6 flex shrink-0" alt="icon">
+                                        </div>
+                                        <p class="text-sm leading-[21px] text-booster-grey">CMO Kita Bersama</p>
+                                    </div>
+                                </div>
+                                <p class="leading-[28px] line-clamp-3">Adriana was too good for her loremo talent dolor targeted beyond ipsum amet succeed campaigns awareness</p>
+                                <div class="flex items-center gap-[2px]">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                </div>
+                            </div>
+                            <div class="card flex flex-col rounded-[34px] border border-booster-light p-5 gap-4 bg-[#FAFAFB]">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex w-[70px] h-[70px] rounded-3xl overflow-hidden bg-[#D9D9D9] shrink-0">
+                                        <img src="assets/images/photos/profile-6.png" class="w-full h-full object-cover" alt="photo">
+                                    </div>
+                                    <div class="flex flex-col justify-center gap-[2px]">
+                                        <div class="flex items-center gap-[2px] flex-nowrap">
+                                            <h1 class="font-bold line-clamp-1">Adriana Saputri</h1>
+                                            <img src="assets/images/icons/verify.svg" class="w-6 flex shrink-0" alt="icon">
+                                        </div>
+                                        <p class="text-sm leading-[21px] text-booster-grey">CMO Kita Bersama</p>
+                                    </div>
+                                </div>
+                                <p class="leading-[28px] line-clamp-3">Adriana was too good for her loremo talent dolor targeted beyond ipsum amet succeed campaigns awareness</p>
+                                <div class="flex items-center gap-[2px]">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                </div>
+                            </div>
+                            <div class="card flex flex-col rounded-[34px] border border-booster-light p-5 gap-4 bg-[#FAFAFB]">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex w-[70px] h-[70px] rounded-3xl overflow-hidden bg-[#D9D9D9] shrink-0">
+                                        <img src="assets/images/photos/profile-6.png" class="w-full h-full object-cover" alt="photo">
+                                    </div>
+                                    <div class="flex flex-col justify-center gap-[2px]">
+                                        <div class="flex items-center gap-[2px] flex-nowrap">
+                                            <h1 class="font-bold line-clamp-1">Adriana Saputri</h1>
+                                            <img src="assets/images/icons/verify.svg" class="w-6 flex shrink-0" alt="icon">
+                                        </div>
+                                        <p class="text-sm leading-[21px] text-booster-grey">CMO Kita Bersama</p>
+                                    </div>
+                                </div>
+                                <p class="leading-[28px] line-clamp-3">Adriana was too good for her loremo talent dolor targeted beyond ipsum amet succeed campaigns awareness</p>
+                                <div class="flex items-center gap-[2px]">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                    <img src="assets/images/icons/Star.svg" class="flex shrink-0" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-dashed border-booster-light">
+                    <div class="flex items-center rounded-[34px] border border-booster-light p-5 gap-5">
+                        <img src="assets/images/icons/security-user-green-outline.svg" class="w-[38px] flex shrink-0" alt="icon">
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="font-bold text-lg leading-[27px]">Only Hire in Booster</p>
+                            <p class="text-booster-grey">Kami sarankan tidak melakukan booking diluar platform</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside id="Right-Content" class="flex flex-col w-[320px] h-fit shrink-0 rounded-[34px] border border-booster-light p-5 gap-4 bg-white">
+                <div class="flex flex-col gap-1">
+                    <h2 class="font-bold">Adriana’s Stats</h2>
+                    <p class="text-booster-grey">Dolor validasi lorem ipsumia</p>
+                </div>
+                <hr class="border-dashed border-booster-light">
+                <div class="card flex items-center rounded-[30px] border border-booster-light p-5 gap-5">
+                    <div class="flex shrink-0 w-[38px] overflow-hidden items-center">
+                        <img src="assets/images/logos/facebook.svg" class="w-full h-full object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[2px]">
+                        <h3 class="font-bold text-lg leading-[27px]">19.250.000</h3>
+                        <p class="text-booster-grey">Followers</p>
+                    </div>
+                </div>
+                <div class="card flex items-center rounded-[30px] border border-booster-light p-5 gap-5">
+                    <div class="flex shrink-0 w-[38px] overflow-hidden items-center">
+                        <img src="assets/images/logos/tiktok.svg" class="w-full h-full object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[2px]">
+                        <h3 class="font-bold text-lg leading-[27px]">19.250.000</h3>
+                        <p class="text-booster-grey">Followers</p>
+                    </div>
+                </div>
+                <div class="card flex items-center rounded-[30px] border border-booster-light p-5 gap-5">
+                    <div class="flex shrink-0 w-[38px] overflow-hidden items-center">
+                        <img src="assets/images/logos/twitter.svg" class="w-full h-full object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[2px]">
+                        <h3 class="font-bold text-lg leading-[27px]">19.250.000</h3>
+                        <p class="text-booster-grey">Followers</p>
+                    </div>
+                </div>
+                <div class="card flex items-center rounded-[30px] border border-booster-light p-5 gap-5">
+                    <div class="flex shrink-0 w-[38px] overflow-hidden items-center">
+                        <img src="assets/images/logos/instagram.svg" class="w-full h-full object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[2px]">
+                        <h3 class="font-bold text-lg leading-[27px]">19.250.000</h3>
+                        <p class="text-booster-grey">Followers</p>
+                    </div>
+                </div>
+                <a href="services.html" class="flex items-center w-full justify-between rounded-3xl py-5 px-[30px] bg-booster-blue hover:shadow-[0px_6px_20px_0px_#1472FF66] transition-all duration-300">
+                    <span class="font-semibold text-lg leading-[27px] text-white">View All Services</span>
+                    <img src="assets/images/icons/menu-board-white-outline.svg" class="w-6 flex shrink-0" alt="icon">
+                </a>
+            </aside>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
