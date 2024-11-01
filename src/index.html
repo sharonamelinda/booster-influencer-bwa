@@ -10,6 +10,479 @@
     <title>Booster - Browse</title>
 </head>
 <body>
-    
+    <div id="main" class="flex flex-col gap-[30px] overflow-hidden min-h-screen mx-auto bg-[#F2F2F2]">
+        <nav id="navbar" class=" bg-white">
+            <ul class="max-w-[1280px] flex justify-between items-center px-[75px] py-5 mx-auto">
+                <div class="w-[149px] h-[46px] shrink-0 overflow-hidden">
+                    <img src="assets/images/logos/logo.svg" class="w-full h-full object-cover" alt="logo">
+                </div>
+                <div class="flex gap-[30px] items-center justify-center">
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">Use Case</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-booster-darkblue hover:bg-booster-yellow hover:font-semibold px-[10px] py-[6px] rounded-[12px] transition-all duration-300">About</a>
+                    </li>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <a href="#" class="p-[10px] rounded-[18px] ring-1 ring-booster-light hover:ring-booster-yellow transition-all duration-300">
+                        <img src="assets/images/icons/24-support.svg" class="w-6 h-6" alt="icon">
+                    </a>
+                    <a href="#" class="p-[10px] rounded-[18px] ring-1 ring-booster-light hover:ring-booster-yellow transition-all duration-300">
+                        <img src="assets/images/icons/setting-2.svg" class="w-6 h-6" alt="icon">
+                    </a>
+                    <img src="assets/images/icons/line.svg" class="h-[52px]" alt="line">
+                    <a href="#" class="py-[14px] px-5 font-semibold bg-booster-blue rounded-[18px] text-white">Check My Order</a>
+                </div>
+            </ul>
+        </nav>
+        <div class="max-w-[1280px] w-full flex gap-[30px] px-[75px] mx-auto pb-[60px]">
+            <aside id="filter-section">
+                <div class="flex flex-col gap-4 items-center">
+                    <div id="app-platform" class="w-[270px] bg-white p-5" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300' : 'rounded-[24px]'">
+                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                            <h2 class="font-bold">App Platform</h2>
+                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                        </div>
+                        <form>
+                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                <hr class="border-dashed mt-4">
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Instagram</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">TikTok</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Facebook</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Twitter</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="campaign-goals" class="w-[270px] bg-white p-5" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300' : 'rounded-[24px]'">
+                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                            <h2 class="font-bold">Campaign Goals</h2>
+                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                        </div>
+                        <form>
+                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                <hr class="border-dashed mt-4">
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Instagram</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">TikTok</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Facebook</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white]">
+                                        <span class="font-semibold">Twitter</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="campaign-goals" class="w-[270px] bg-white p-5" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300' : 'rounded-[24px]'">
+                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                            <h2 class="font-bold">Campaign Goals</h2>
+                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                        </div>
+                        <form>
+                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                <hr class="border-dashed mt-4">
+                                <div class="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-4">
+                                    <label class="flex items-center group">
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'awareness', 'black')">
+                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                            <img src="assets/images/icons/awareness-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                            <img src="assets/images/icons/awareness-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                            <span class="font-semibold">Awareness</span>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center group">
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'traffic', 'black')">
+                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                            <img src="assets/images/icons/traffic-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                            <img src="assets/images/icons/traffic-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                            <span class="font-semibold">Traffic</span>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center group">
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'awareness', 'black')">
+                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                            <img src="assets/images/icons/awareness-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                            <img src="assets/images/icons/awareness-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                            <span class="font-semibold">Awareness</span>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center group">
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'awareness', 'black')">
+                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                            <img src="assets/images/icons/awareness-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                            <img src="assets/images/icons/awareness-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                            <span class="font-semibold">Awareness</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="account-sizes" class="w-[270px] bg-white p-5" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px] hover:ring-2 hover:ring-booster-yellow transition-all duration-300' : 'rounded-[24px]'">
+                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                            <h2 class="font-bold">Account Sizes</h2>
+                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                        </div>
+                        <form>
+                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                <hr class="border-dashed mt-4">
+                                <label class="flex items-center group">
+                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                        <span class="font-semibold">Nano (10K)</span>
+                                    </div>
+                                </label>
+                                <label class="flex items-center group">
+                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                        <span class="font-semibold">Macro (1M)</span>
+                                    </div>
+                                </label>
+                                <label class="flex items-center group">
+                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white">
+                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                        <span class="font-semibold">Mega (2M)</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <main class="w-full flex flex-col gap-[30px] items-center">
+                <section id="header" class="bg-white w-full rounded-[34px]">
+                    <div class="flex items-center justify-between p-5">
+                        <div class="flex flex-col gap-[2px]">
+                            <h1 class="font-bold text-[28px]">Great Influencers</h1>
+                            <p class="text-booster-grey">We help big companies to business</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <form class="flex items-center relative">
+                                <input type="text" class="w-[330px] px-5 pr-[60px] py-[14px] placeholder:text-booster-grey border border-booster-light rounded-[18px] focus:outline-none" placeholder="Search by name or email">
+                                <label for="icon" class="absolute right-5">
+                                    <img src="assets/images/icons/search-black-outline.svg" class="w-6 h-6" alt="icon">
+                                </label>
+                            </form>
+                            <img src="assets/images/icons/line.svg" class="shrink-0" alt="line">
+                            <a href="#">
+                                <img src="assets/images/icons/chart-up.svg" class="w-[52px] h-[52px] shrink-0" alt="icon">
+                            </a>
+                        </div>                        
+                    </div>
+                </section>
+                <section id="influencer-list" class="rounded-[34px]">
+                    <div class="grid grid-cols-[repeat(3,265px)] gap-4">
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-1.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Adriana Saputri</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Nano Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-2.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Angga Setiawan</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Mega Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-3.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Adriana Saputri</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Nano Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-4.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Adriana Saputri</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Nano Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-5.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Angga Setiawan</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Mega Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-6.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Adriana Saputri</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Nano Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-7.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Angga Setiawan</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Mega Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="no-data.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                            <div class="flex flex-col gap-5 px-5 py-[30px]">
+                                <div class="absolute ">
+                                    <img src="assets/images/photos/ellipse.png" class="hidden group-hover:block" alt="ellipse">
+                                </div>
+                                <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
+                                    <img src="assets/images/photos/profile-8.png" class="w-full h-full object-cover" alt="photos">
+                                </div>
+                                <div class="flex flex-col gap-[2px] items-center">
+                                    <div class="flex gap-1 items-center">
+                                        <h3 class="font-bold text-[18px] group-hover:text-white">Adriana Saputri</h3>
+                                        <img src="assets/images/icons/verify.svg" class="w-6 h-6" alt="icon">
+                                    </div>
+                                    <p class="text-booster-grey">Nano Influencer</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/users-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">19.250.000</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/note-favorite-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/note-favorite-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">291 Success Jobs</p>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <img src="assets/images/icons/global-blue-outline.svg" class="w-6 h-6 group-hover:hidden" alt="icon">
+                                        <img src="assets/images/icons/global-white-outline.svg" class="w-6 h-6 hidden group-hover:block" alt="icon">
+                                        <p class="font-semibold group-hover:text-white">Jakarta City</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
