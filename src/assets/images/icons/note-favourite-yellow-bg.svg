@@ -1,0 +1,10 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="70" rx="23.3333" fill="#FFEEC0"/>
+<path d="M28.6667 19.1667V23.9167" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.3333 19.1667V23.9167" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.25 29.4583V37.5808C47.8408 36.4567 46.0517 35.7917 44.1042 35.7917C42.1567 35.7917 40.3358 36.4724 38.9108 37.6283C36.995 39.1324 35.7917 41.4917 35.7917 44.1042C35.7917 45.6558 36.235 47.1442 36.995 48.3792C37.5808 49.345 38.3408 50.1842 39.2433 50.8333H28.6667C23.125 50.8333 20.75 47.6667 20.75 42.9167V29.4583C20.75 24.7083 23.125 21.5417 28.6667 21.5417H41.3333C46.875 21.5417 49.25 24.7083 49.25 29.4583Z" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.0833 33.4167H36.5833" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.0833 41.3333H31.2316" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.4167 44.1042C52.4167 45.6558 51.9734 47.1442 51.2134 48.3792C50.7701 49.1392 50.2159 49.8042 49.5668 50.3425C48.1101 51.6408 46.2101 52.4167 44.1042 52.4167C42.2834 52.4167 40.6051 51.8308 39.2434 50.8333C38.3409 50.1842 37.5809 49.345 36.9951 48.3792C36.2351 47.1442 35.7917 45.6558 35.7917 44.1042C35.7917 41.4917 36.9951 39.1324 38.9109 37.6283C40.3359 36.4724 42.1567 35.7917 44.1042 35.7917C46.0517 35.7917 47.8409 36.4567 49.2501 37.5808C51.1817 39.1008 52.4167 41.46 52.4167 44.1042Z" stroke="#E6AA05" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44.1041 48.0625C44.1041 45.8775 45.8774 44.1042 48.0624 44.1042C45.8774 44.1042 44.1041 42.3308 44.1041 40.1458C44.1041 42.3308 42.3308 44.1042 40.1458 44.1042C42.3308 44.1042 44.1041 45.8775 44.1041 48.0625Z" stroke="#E6AA05" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
