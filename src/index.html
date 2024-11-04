@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="main" class="flex flex-col gap-[30px] overflow-hidden min-h-screen mx-auto bg-[#F2F2F2]">
-        <nav id="navbar" class=" bg-white">
+        <nav id="navbar" class="border-b border-[#e9e9e9] bg-white">
             <ul class="max-w-[1280px] flex justify-between items-center px-[75px] py-5 mx-auto">
                 <a href="index.html" class="w-[149px] h-[46px] shrink-0 overflow-hidden">
                     <img src="assets/images/logos/logo.svg" class="w-full h-full object-cover" alt="logo">
@@ -36,145 +36,139 @@
         </nav>
         <div class="max-w-[1280px] w-full flex gap-[30px] px-[75px] mx-auto pb-[60px]">
             <aside id="filter-section">
-                <div class="flex flex-col gap-4 items-center">
-                    <div id="app-platform" class="w-[270px] bg-white p-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
-                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
-                            <h2 class="font-bold">App Platform</h2>
-                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
-                        </div>
-                        <form>
+                <form>
+                    <div class="flex flex-col gap-4 items-center">
+                        <div id="app-platform" class="w-[270px] bg-white p-5 hover:ring-2 ring-1 ring-[#e9e9e9] hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
+                            <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                                <h2 class="font-bold">App Platform</h2>
+                                <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                            </div>
                             <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
                                 <hr class="border-dashed mt-4">
                                 <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Instagram</span>
+                                    <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                    <span class="font-semibold">Instagram</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">TikTok</span>
+                                    <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                    <span class="font-semibold">TikTok</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Facebook</span>
+                                    <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                    <span class="font-semibold">Facebook</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Twitter</span>
+                                    <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                    <span class="font-semibold">Twitter</span>
                                 </label>
                             </div>
-                        </form>
-                    </div>
-                    <div id="campaign-goals" class="w-[270px] bg-white p-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
-                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
-                            <h2 class="font-bold">Campaign Goals</h2>
-                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
                         </div>
-                        <form>
-                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
-                                <hr class="border-dashed mt-4">
-                                <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Instagram</span>
-                                </label>
-                                <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">TikTok</span>
-                                </label>
-                                <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Facebook</span>
-                                </label>
-                                <label class="flex items-center space-x-2">
-                                        <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
-                                        <span class="font-semibold">Twitter</span>
-                                </label>
+                        <div id="campaign-goals" class="w-[270px] bg-white p-5 hover:ring-2 ring-1 ring-[#e9e9e9] hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
+                            <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                                <h2 class="font-bold">Campaign Goals</h2>
+                                <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
                             </div>
-                        </form>
-                    </div>
-                    <div id="campaign-goals" class="w-[270px] bg-white p-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
-                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
-                            <h2 class="font-bold">Campaign Goals</h2>
-                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                                <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                    <hr class="border-dashed mt-4">
+                                    <label class="flex items-center space-x-2">
+                                            <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                            <span class="font-semibold">Instagram</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                            <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                            <span class="font-semibold">TikTok</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                            <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                            <span class="font-semibold">Facebook</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                            <input type="checkbox" class="appearance-none h-6 w-6 ring-1 ring-booster-light rounded-[8px] checked:bg-booster-blue checked:ring-booster-blue focus:outline-none checked:shadow-[inset_0_0_0_5px_white] transition-all duration-300">
+                                            <span class="font-semibold">Twitter</span>
+                                    </label>
+                                </div>
                         </div>
-                        <form>
+                        <div id="campaign-goals" class="w-[270px] bg-white p-5 hover:ring-2 ring-1 ring-[#e9e9e9] hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
+                            <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                                <h2 class="font-bold">Campaign Goals</h2>
+                                <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                            </div>
+                                <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
+                                    <hr class="border-dashed mt-4">
+                                    <div class="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-4">
+                                        <label class="flex items-center group">
+                                            <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'awareness', 'black')">
+                                            <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                                <img src="assets/images/icons/awareness-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                                <img src="assets/images/icons/awareness-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                                <span class="font-semibold">Awareness</span>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center group">
+                                            <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'traffic', 'black')">
+                                            <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                                <img src="assets/images/icons/traffic-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                                <img src="assets/images/icons/traffic-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                                <span class="font-semibold">Traffic</span>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center group">
+                                            <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'leads', 'black')">
+                                            <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                                <img src="assets/images/icons/leads-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                                <img src="assets/images/icons/leads-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                                <span class="font-semibold">Leads</span>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center group">
+                                            <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                            <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                                <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
+                                                <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
+                                                <span class="font-semibold">Sign Ups</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="account-sizes" class="w-[270px] bg-white p-5 hover:ring-2 ring-1 ring-[#e9e9e9] hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
+                            <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
+                                <h2 class="font-bold">Account Sizes</h2>
+                                <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
+                            </div>
                             <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
-                                <hr class="border-dashed mt-4">
-                                <div class="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-4">
+                                    <hr class="border-dashed mt-4">
                                     <label class="flex items-center group">
-                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'awareness', 'black')">
-                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                            <img src="assets/images/icons/awareness-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
-                                            <img src="assets/images/icons/awareness-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
-                                            <span class="font-semibold">Awareness</span>
-                                        </div>
-                                    </label>
-                                    <label class="flex items-center group">
-                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'traffic', 'black')">
-                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                            <img src="assets/images/icons/traffic-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
-                                            <img src="assets/images/icons/traffic-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
-                                            <span class="font-semibold">Traffic</span>
-                                        </div>
-                                    </label>
-                                    <label class="flex items-center group">
-                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'leads', 'black')">
-                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                            <img src="assets/images/icons/leads-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
-                                            <img src="assets/images/icons/leads-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
-                                            <span class="font-semibold">Leads</span>
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                        <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                            <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                            <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                            <span class="font-semibold">Nano (10K)</span>
                                         </div>
                                     </label>
                                     <label class="flex items-center group">
                                         <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
-                                        <div class="flex flex-col justify-between gap-[10px] w-full p-[10px] border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                            <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 group-[peer-checked]:hidden" alt="icon black">
-                                            <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden group-[peer-checked]:block" alt="icon white">
-                                            <span class="font-semibold">Sign Ups</span>
+                                        <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                            <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                            <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                            <span class="font-semibold">Macro (1M)</span>
                                         </div>
                                     </label>
-                                </div>
+                                    <label class="flex items-center group">
+                                        <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
+                                        <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
+                                            <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
+                                            <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
+                                            <span class="font-semibold">Mega (2M)</span>
+                                        </div>
+                                    </label>
                             </div>
-                        </form>
-                    </div>
-                    <div id="account-sizes" class="w-[270px] bg-white p-5 hover:ring-2 hover:ring-booster-yellow transition-all duration-300" x-data="{isOpen: false}" :class="isOpen ? 'rounded-[34px]' : 'rounded-[24px]'">
-                        <div class="flex justify-between items-center cursor-pointer" @click="isOpen = !isOpen">
-                            <h2 class="font-bold">Account Sizes</h2>
-                            <img src="assets/images/icons/arrow-square-up.svg" class="w-6 h-6" :class="{'rotate-180' : isOpen}" alt="icon">
                         </div>
-                        <form>
-                            <div class="flex flex-col gap-4" x-show="isOpen" x-transition x-transition:enter.duration.1000ms x-transition.delay.50m>
-                                <hr class="border-dashed mt-4">
-                                <label class="flex items-center group">
-                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
-                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
-                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
-                                        <span class="font-semibold">Nano (10K)</span>
-                                    </div>
-                                </label>
-                                <label class="flex items-center group">
-                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
-                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
-                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
-                                        <span class="font-semibold">Macro (1M)</span>
-                                    </div>
-                                </label>
-                                <label class="flex items-center group">
-                                    <input type="checkbox" class="hidden peer" onchange="toggleImage(this, 'users', 'black')">
-                                    <div class="flex items-center gap-[10px] w-full px-4 py-3 border rounded-[14px] cursor-pointer bg-white border-booster-light peer-checked:bg-booster-blue peer-checked:text-white transition-all duration-300">
-                                        <img src="assets/images/icons/users-black-outline.svg" class="w-6 h-6 peer-checked:hidden" alt="icon black">
-                                        <img src="assets/images/icons/users-white-outline.svg" class="w-6 h-6 hidden peer-checked:block" alt="icon white">
-                                        <span class="font-semibold">Mega (2M)</span>
-                                    </div>
-                                </label>
-                            </div>
-                        </form>
                     </div>
-                </div>
+                </form>             
             </aside>
             <main class="w-full flex flex-col gap-[30px] items-center">
-                <section id="header" class="bg-white w-full rounded-[34px]">
+                <section id="header" class="bg-white w-full rounded-[34px] ring-1 ring-[#e9e9e9]">
                     <div class="flex items-center justify-between p-5">
                         <div class="flex flex-col gap-[2px]">
                             <h1 class="font-bold text-[28px]">Great Influencers</h1>
@@ -196,7 +190,7 @@
                 </section>
                 <section id="influencer-list" class="rounded-[34px]">
                     <div class="grid grid-cols-[repeat(3,265px)] gap-4">
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
                                     <img src="assets/images/photos/profile-1.png" class="w-full h-full object-cover" alt="photos">
@@ -230,7 +224,7 @@
                                 <img src="assets/images/photos/ellipse.png" class="w-full hidden group-hover:block" alt="ellipse">
                             </div>
                         </a>                        
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
                                     <img src="assets/images/photos/profile-2.png" class="w-full h-full object-cover" alt="photos">
@@ -261,7 +255,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="relative z-20">
                                     <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
@@ -300,7 +294,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="relative z-20">
                                     <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto relative">
@@ -336,7 +330,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
                                     <img src="assets/images/photos/profile-5.png" class="w-full h-full object-cover" alt="photos">
@@ -367,7 +361,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
                                     <img src="assets/images/photos/profile-6.png" class="w-full h-full object-cover" alt="photos">
@@ -401,7 +395,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
                                     <img src="assets/images/photos/profile-7.png" class="w-full h-full object-cover" alt="photos">
@@ -432,7 +426,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="details.html" class="relative group bg-white rounded-[44px] hover:bg-booster-navy transition-all duration-300">
+                        <a href="details.html" class="relative group bg-white rounded-[44px] ring-1 ring-[#e9e9e9] hover:bg-booster-navy transition-all duration-300">
                             <div class="flex flex-col gap-5 px-5 py-[30px] relative z-20">
                                 <div class="relative z-20">
                                     <div class="w-[120px] h-[120px] shrink-0 rounded-[40px] overflow-hidden mx-auto">
